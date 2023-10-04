@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Web site created for Finding Jobs" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>EbizzInfotech</title>
+
+    <link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/assets/img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="%PUBLIC_URL%/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="%PUBLIC_URL%/assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="%PUBLIC_URL%/assets/css/authentication/form-1.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/css/forms/theme-checkbox-radio.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/css/forms/switches.css">
+
+    <link href="%PUBLIC_URL%/assets/css/loader.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="%PUBLIC_URL%/assets/js/loader.js"></script> -->
+    <link href="%PUBLIC_URL%/plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
+    <link href="%PUBLIC_URL%/assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />
+    <link href="%PUBLIC_URL%/assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
+
+    <link href="%PUBLIC_URL%/assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <link href="%PUBLIC_URL%/assets/css/elements/custom-pagination.css" rel="stylesheet" type="text/css" />
+
+    <link href="%PUBLIC_URL%/assets/css/elements/miscellaneous.css" rel="stylesheet" type="text/css" />
+    <link href="%PUBLIC_URL%/assets/css/elements/breadcrumb.css" rel="stylesheet" type="text/css" />
+
+    <link href="%PUBLIC_URL%/plugins/file-upload/file-upload-with-preview.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- For Datatabel STYLE FILE -->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/plugins/table/datatable/dt-global_style.css" />
+
+    <!--  For Cards STYLE FILE  -->
+    <!-- <link href="%PUBLIC_URL%/assets/css/components/cards/card.css" rel="stylesheet" type="text/css" /> -->
+
+    <!-- Chatbox STYLE FILE -->
+    <link href="%PUBLIC_URL%/assets/css/apps/mailing-chat.css" rel="stylesheet" type="text/css" />
+
+    <!-- 404 PAGE STYLE FILE -->
+    <link href="%PUBLIC_URL%/assets/css/pages/error/style-400.css" rel="stylesheet" type="text/css" />
+
+    <!--  USER PROFILE STYLE FILE  -->
+    <link href="%PUBLIC_URL%/assets/css/users/user-profile.css" rel="stylesheet" type="text/css" />
+
+</head>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script src="%PUBLIC_URL%/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="%PUBLIC_URL%/bootstrap/js/popper.min.js"></script>
+    <script src="%PUBLIC_URL%/bootstrap/js/bootstrap.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/authentication/form-1.js"></script>
+
+    <script src="%PUBLIC_URL%/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/app.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/custom.js"></script>
+    <!-- <script src="%PUBLIC_URL%/plugins/apex/apexcharts.min.js"></script> -->
+    <script src="%PUBLIC_URL%/assets/js/dashboard/dash_2.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            const apiUrl = 'test.json';
+
+            $.ajax({
+                url: window.location.origin + '/' + apiUrl,
+                dataType: 'json',
+                success: function(data) {
+                    if (data.includes(window.location.pathname)) {
+                        // window.location.reload();
+                        App.init();
+                    } else {
+                        // window.location.reload();
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error loading JSON file:', error);
+                }
+            });
+        });
+    </script>
+
+    <script src="%PUBLIC_URL%/assets/js/dashboard/dash_1.js"></script>
+
+    <!-- <script src="%PUBLIC_URL%/plugins/highlight/highlight.pack.js"></script> -->
+    <!-- <script src="%PUBLIC_URL%/assets/js/scrollspyNav.js"></script> -->
+    <!-- <script src="%PUBLIC_URL%/assets/js/authentication/form-2.js"></script> -->
+
+
+</body>
+
+</html>
