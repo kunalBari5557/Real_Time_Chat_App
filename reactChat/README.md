@@ -1,13 +1,9 @@
-# Getting Started with Create React App
+Using socket io create group chat.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot_2](https://github.com/kunalBari5557/Real_Time_Chat_App/assets/96560938/89c58b70-8b72-46b6-9a4a-c15564d38833)
 
-## Available Scripts
+![Screenshot_1](https://github.com/kunalBari5557/Real_Time_Chat_App/assets/96560938/dcfe9317-fee7-47c1-a5e5-5471311ea04d)
 
-In the project directory, you can run:
+![Screenshot (179)](https://github.com/kunalBari5557/Real_Time_Chat_App/assets/96560938/3949c9f8-a873-4875-b308-b6843aee0ff2)
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
+![Screenshot_3](https://github.com/kunalBari5557/Real_Time_Chat_App/assets/96560938/123ac352-ec0d-4439-8dfa-c8ddcba10e72)
